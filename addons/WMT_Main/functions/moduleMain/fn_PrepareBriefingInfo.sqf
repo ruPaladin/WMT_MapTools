@@ -13,20 +13,17 @@
     Returns:
         Nothing
 */
-#define PR(x) private ['x']; x
-
 if (not isServer) exitWith {};
 wmt_global_srvBrfData = [];
 
-
-PR(_tempData) = [];
-PR(_vehinfo) = [];
-PR(_grpinfo) = [];
-PR(_side) = civilian;
-PR(_units) = [];
-PR(_group) = [];
-PR(_playersGr) = 0;
-PR(_vehicles)= (call WMT_fnc_GetVehicles);
+private _tempData = [];
+private _vehinfo = [];
+private _grpinfo = [];
+private _side = civilian;
+private _units = [];
+private _group = [];
+private _playersGr = 0;
+private _vehicles= (call WMT_fnc_GetVehicles);
 
 // данные техники ["V", [координаты], "класс", сторона]
 {

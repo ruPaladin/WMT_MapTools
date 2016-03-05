@@ -1,17 +1,17 @@
 /*
-    Name: WMT_fnc_PrecompileMain
+	Name: WMT_fnc_PrecompileMain
 
-    Author(s):
-        Ezhuk
+	Author(s):
+		Ezhuk
 
-    Description:
-        Compile functions
+	Description:
+		Compile functions
 
-    Parameters:
-        Nothing
+	Parameters:
+		Nothing
 
-    Returns:
-        Nothing
+	Returns:
+		Nothing
 */
 
 
@@ -19,7 +19,6 @@
 WMT_fnc_Announcement                = compileFinal preprocessFileLineNumbers  ("WMT_Main\functions\fn_Announcement.sqf");
 WMT_fnc_ArrayToString               = compileFinal preprocessFileLineNumbers  ("WMT_Main\functions\fn_ArrayToString.sqf");
 WMT_fnc_GetVehicles                 = compileFinal preprocessFileLineNumbers  ("WMT_Main\functions\fn_GetVehicles.sqf");
-WMT_fnc_Evh                         = compileFinal preprocessFileLineNumbers  ("WMT_Main\functions\fn_evh.sqf");
 WMT_fnc_BriefingTimer               = compileFinal preprocessFileLineNumbers  ("WMT_Main\functions\fn_BriefingTimer.sqf");
 
 
