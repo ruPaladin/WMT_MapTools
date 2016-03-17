@@ -96,7 +96,7 @@ if (getClientState != "BRIEFING READ" || getClientState == "NONE" and false) the
 
 ["diary", localize "STR_WMT_Squads", _squadTxt] call WMT_fnc_CreateDiaryRecord;
 
-if (count _enemyVehs != 0 and (not isNil "wmt_param_campaignBriefingMode")) then {
+if (count _enemyVehs != 0 and (isNil "wmt_param_campaignBriefingMode")) then {
     _enemyVehs = _enemyVehs call BIS_fnc_consolidateArray;
     {
         _enemyVehTxt = _enemyVehTxt + format ["%1 - <font color='#c7861b'>%2</font>",_x select 0,_x select 1];
