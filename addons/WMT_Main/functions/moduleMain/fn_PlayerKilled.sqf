@@ -19,6 +19,8 @@ closeDialog 0;
 
 private _killer = _this select 1;
 
+if (isNull _killer) then {_killer = player};
+
 if (_killer == player) then {
     _killer = player getVariable ["ace_medical_lastDamageSource", _killer];
 };
