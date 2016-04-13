@@ -52,11 +52,6 @@ class RscTitles
     #include "resource\RscWMTVehicleCrew.h"
 };
 
-class RscDisplayOptionsVideo
-{
-    onLoad = "['onLoad',_this,'RscDisplayOptionsVideo','GUI'] call  (uinamespace getvariable 'BIS_fnc_initDisplay'); ['disableOptions', _this] call WMT_fnc_HandlerOptions;";
-};
-
 // Fake map for wmt_fnc_briefingMap
 class CfgWeapons
 {
